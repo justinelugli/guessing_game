@@ -1,0 +1,30 @@
+
+<!DOCTYPE><html>
+<head>
+<title>Justine's Guessing Game</title>
+</head>
+<body>
+	<h1>Justine's Guessing Game</h1>
+	<script>
+	var number = Math.floor((Math.random() *10) +1);
+	
+	var guess = prompt("Guess a number between 1 and 10");
+	if (guess === number) {
+		alert("Good Job! You win!");
+
+	}
+	else {
+		if(guess < number) {
+			alert("Your guess is too low.")
+
+		}
+		if (guess > number) {
+			alert("Your guess is too high.")
+		}
+		alert("You Lose! the correct answer is" + " " + number);
+	}
+	
+	</script>
+
+	
+	</body>
